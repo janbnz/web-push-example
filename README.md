@@ -1,6 +1,6 @@
 # web-push-example
 
-[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
@@ -15,6 +15,12 @@ This project is a web push example showcasing the implementation of web push not
 
 Contributions are welcome!
 
+## Authors
+
+[Jan Benz](https://github.com/janbnz) <br>
+[simon04](https://github.com/simon04) - [web-push-notifications](https://github.com/simon04/web-push-notifications) <br>
+[ralscha](https://github.com/ralscha) - [webpush](https://github.com/ralscha/blog2019/tree/master/webpush)
+
 ## License
 
-This project is licensed under the [Unlicense](http://unlicense.org/). You are free to use, modify, and distribute the code in any way you like.
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). 
