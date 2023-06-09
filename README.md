@@ -4,7 +4,7 @@
 
 ## Description
 
-This project is a web push example showcasing the implementation of web push notifications. It consists of a Java backend with a REST server powered by NanoHTTPD, and a JavaScript frontend with a service worker. The frontend sends data to the REST server, which then triggers a test notification.
+This project is a web push example showcasing the implementation of web push notifications. It consists of a Java backend with a REST server powered by NanoHTTPD, and a JavaScript frontend with a service worker. The frontend sends the necessary data for the notification to the REST server, which then triggers a test notification.
 
 ## Features
 
