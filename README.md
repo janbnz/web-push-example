@@ -1,6 +1,6 @@
 # web-push-example
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
 ## Description
 
@@ -18,9 +18,8 @@ Contributions are welcome!
 ## Authors
 
 [Jan Benz](https://github.com/janbnz) <br>
-[simon04](https://github.com/simon04) - [web-push-notifications](https://github.com/simon04/web-push-notifications) <br>
-[ralscha](https://github.com/ralscha) - [webpush](https://github.com/ralscha/blog2019/tree/master/webpush)
+[simon04](https://github.com/simon04) - [web-push-notifications](https://github.com/simon04/web-push-notifications) 
 
 ## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). 
+This project is licensed under the [Unlicense](http://unlicense.org/), except for the following components:
