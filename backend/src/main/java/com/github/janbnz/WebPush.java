@@ -28,6 +28,13 @@ public class WebPush {
     private static final String VAPID_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
     private static final String VAPID_PRIVATE_KEY = "YOUR_PRIVATE_KEY";
 
+    /**
+     * Pushes a notification message to a given endpoint using the provided data.
+     *
+     * @param text the notification message to push
+     * @param data the JSON object containing the necessary data for the push
+     * @return the status code of the push request
+     */
     public static int push(String text, JSONObject data) {
         final String endpoint = data.getString("endpoint");
         final String p256dh = data.getJSONObject("keys").getString("p256dh");

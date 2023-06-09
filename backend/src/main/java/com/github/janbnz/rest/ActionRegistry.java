@@ -9,6 +9,9 @@ public class ActionRegistry {
 
     private static final List<RestAction> actions = new ArrayList<>();
 
+    /**
+     * Initializes the ActionRegistry by adding the necessary RestActions.
+     */
     public static void init() {
         actions.add(new SubscribeAction());
     }
