@@ -1,6 +1,49 @@
 <!DOCTYPE html>
+<html style="background-color: #e98146">
 
-<html>
-    <head> </head>
-    <body> </body>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8" />
+	<title>Web Push Test</title>
+</head>
+
+<body>
+	<button onclick="subscribe()">Subscribe</button>
+
+	<script>
+		addEventListener('load', async () => {
+			let sw = await navigator.serviceWorker.register("sw.js")
+			console.log(sw)
+		})
+
+		async function subscribe() {
+			let sw = await navigator.serviceWorker.ready;
+			let push = await sw.pushManager.subscribe({
+				userVisibleOnly: true,
+				// You can generate your vapid keys with a generator like https://www.attheminute.com/vapid-key-generator
+				applicationServerKey: 'YOUR_PUBLIC_KEY'
+			})
+			
+			data = JSON.stringify(push);
+			console.log(data);
+			
+			// Sends a rest request to our backend, which sends us a test notification
+			fetch('http://localhost:8690/subscribe', {
+			  method: 'POST',
+			  body: JSON.stringify({
+				data: data
+			  })
+			})
+			.then(response => response.json())
+			.then(data => {
+			  console.log('Response:', data);
+			})
+			.catch(error => {
+			  console.error('Error:', error);
+			});
+		}
+	</script>
+</body>
+
 </html>
