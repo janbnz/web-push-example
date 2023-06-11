@@ -22,4 +22,4 @@ Contributions are welcome!
 
 ## License
 
-This project is licensed under the [Unlicense](http://unlicense.org/), except for the following components:
+This project is licensed under the [Unlicense](http://unlicense.org/)
